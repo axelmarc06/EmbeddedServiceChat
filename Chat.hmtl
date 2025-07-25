@@ -2,11 +2,16 @@
 <body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #005290;
-		font-family: "Arial", sans-serif;
+		background-color: #0DB14C;
+		font-family: "Salesforce Sans", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #005290;
+		outline: 1px solid #0DB14C;
+	}
+	@font-face {
+		font-family: 'Salesforce Sans';
+		src: url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.woff') format('woff'),
+		url('https://c1.sfdcstatic.com/etc/clientlibs/sfdc-aem-master/clientlibs_base/fonts/SalesforceSans-Regular.ttf') format('truetype');
 	}
 </style>
 
@@ -36,16 +41,16 @@
 
 		embedded_svc.init(
 			'https://avetta--axeldev.sandbox.my.salesforce.com',
-			'https://avetta--axeldev.sandbox.my.site.com/ESWWFMClientSupport1753243192395vforcesi',
+			'https://avetta--axeldev.sandbox.my.site.com/Supplier',
 			gslbBaseURL,
 			'00DU9000005olYj',
-			'WFM_Client_Snap_In',
+			'Supplier_Community_Snap_In',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
-				deploymentId: '572U9000000tYtt',
-				buttonId: '573U9000000oHVV',
+				deploymentId: '5720g000000blK7',
+				buttonId: '5730g000000Kz9V',
 				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IU90000008ts9MAA_1983c556048',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0g000000KykJEAS_16ed84ecd8a',
 				isOfflineSupportEnabled: false
 			}
 		);
