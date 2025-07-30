@@ -2,11 +2,11 @@
 <body>
 <style type='text/css'>
 	.embeddedServiceHelpButton .helpButton .uiButton {
-		background-color: #0DB14B;
+		background-color: #AE6E01;
 		font-family: "Salesforce Sans", sans-serif;
 	}
 	.embeddedServiceHelpButton .helpButton .uiButton:focus {
-		outline: 1px solid #0DB14B;
+		outline: 1px solid #AE6E01;
 	}
 	@font-face {
 		font-family: 'Salesforce Sans';
@@ -40,17 +40,17 @@
 		embedded_svc.settings.entryFeature = 'LiveAgent';
 
 		embedded_svc.init(
-			'https://avetta--int.sandbox.my.salesforce.com',
-			'https://avetta--int.sandbox.my.site.com/',
+			'https://avetta--axeldev.sandbox.my.salesforce.com',
+			'https://avetta--axeldev.sandbox.my.site.com/Supplier',
 			gslbBaseURL,
-			'00Dca000002V7X7',
-			'Community_SnapIn',
+			'00DU9000005olYj',
+			'WFM_Client_Snap_In',
 			{
 				baseLiveAgentContentURL: 'https://c.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
-				deploymentId: '5720g000000blK7',
-				buttonId: '5730g000000Kz9a',
+				deploymentId: '572U9000000tYtt',
+				buttonId: '573U9000000oHVV',
 				baseLiveAgentURL: 'https://d.la12s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
-				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I0g000000Gma9EAC_163f9d35341',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04IU90000008ts9MAA_1983c556048',
 				isOfflineSupportEnabled: false
 			}
 		);
@@ -58,7 +58,7 @@
 
 	if (!window.embedded_svc) {
 		var s = document.createElement('script');
-		s.setAttribute('src', 'https://avetta--int.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
+		s.setAttribute('src', 'https://avetta--axeldev.sandbox.my.salesforce.com/embeddedservice/5.0/esw.min.js');
 		s.onload = function() {
 			initESW(null);
 		};
